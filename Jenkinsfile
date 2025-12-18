@@ -6,7 +6,7 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
         disableConcurrentBuilds()
         timestamps()
-        //retry(1)
+        retry(1)
     }
 
     parameters {
