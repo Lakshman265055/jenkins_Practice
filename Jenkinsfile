@@ -6,9 +6,9 @@ pipeline {
                 echo 'Building the application...'
 
                 //echo "this is build number ${BUILD_NUMBER}"
-                sh "echo this shell is ${WORKSPACE}"
+                sh "echo this shell is ${GIT_BRANCH}"
 
-                echo " this is groovy style ${env.WORKSPACE}"
+                echo " this is groovy style ${env.GIT_BRANCH}"
                 
                 // Replace with your build commands, e.g., sh 'make' or sh 'mvn clean install'
             }
