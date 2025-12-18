@@ -6,7 +6,7 @@ pipeline {
                 echo 'Building the application...'
 
                 //echo "this is build number ${BUILD_NUMBER}"
-                sh "echo this shell is ${BRANCH_NAMET}"
+                sh "echo this shell is ${BRANCH_NAME}"
 
                 echo " this is groovy style ${env.GIT_URL}"
                 
