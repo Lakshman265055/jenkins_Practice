@@ -1,5 +1,5 @@
 pipeline {
-    agent any {
+    agent {
         label 'agent-1'
     } // This runs the entire pipeline on any available agent
     stages {
