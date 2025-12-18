@@ -2,6 +2,12 @@ pipeline {
     agent {
         label 'agent-1'
     } // This runs the entire pipeline on any available agent
+     options{
+        timeout(time: 10, unit: 'MINUTES')
+        disableConcurrentBuilds()
+        timestamps()
+        //retry(1)
+    }
     stages {
         stage('Build') {
             steps {
