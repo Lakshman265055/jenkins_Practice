@@ -1,5 +1,7 @@
 pipeline {
-    agent any // This runs the entire pipeline on any available agent
+    agent any {
+        label 'agent-1'
+    } // This runs the entire pipeline on any available agent
     stages {
         stage('Build') {
             steps {
