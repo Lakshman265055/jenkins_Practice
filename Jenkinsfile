@@ -52,6 +52,15 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"  
             }
         }
+        stage('Approval') {
+      input {
+         message "Approve deployment?"
+         submitter "admin"
+  }
+  steps {
+    sh 'echo Approved'
+  }
+}
     }
     post {
         always {
