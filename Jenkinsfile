@@ -5,7 +5,9 @@ pipeline {
             steps {
                 echo 'Building the application...'
 
-                echo "this is build number ${BUILD_NUMBER}"
+                //echo "this is build number ${BUILD_NUMBER}"
+                sh "echo this is ${BUILD_ID}"
+                
                 // Replace with your build commands, e.g., sh 'make' or sh 'mvn clean install'
             }
         }
