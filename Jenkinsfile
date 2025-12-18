@@ -6,7 +6,7 @@ pipeline {
                 echo 'Building the application...'
 
                 //echo "this is build number ${BUILD_NUMBER}"
-                sh "echo this shell is ${GIT_COMMIT}"
+                sh "echo this shell is ${BRANCH_NAMET}"
 
                 echo " this is groovy style ${env.GIT_URL}"
                 
@@ -23,6 +23,7 @@ pipeline {
             steps {
                 echo 'Deploying the application...'
                 // Replace with your deployment commands
+                
             }
         }
     }
