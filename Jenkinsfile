@@ -7,6 +7,7 @@ pipeline {
         disableConcurrentBuilds()
         timestamps()
         retry(1)
+        
     }
 
     parameters {
